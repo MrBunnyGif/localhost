@@ -20,16 +20,9 @@
                     </h3>
                     <div id="listagem">
                         <?php
-                            // $path = 'C:\xampp\htdocs';
-                            // $diretorio = dir($path);
-                            // while($arquivo = $diretorio -> read()){
-                            //     echo "<a href='".$path.$arquivo."'>".$arquivo."</a><br />";
-                            // }
-                            // $diretorio -> close();
-                            
                             $dir = scandir('C:\xampp\htdocs');
                                 foreach ($dir as $d){
-                                echo $d."<br>";
+                                echo $d.'<br>';
                             }
                         ?>
                     </div>
