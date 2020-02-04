@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Localhost</title>
+    <link rel="shortcut icon" href="https://i.imgur.com/O7CRS3b.png">
     <style>
         #caixa{
             height: 400px;
