@@ -28,17 +28,48 @@
             box-shadow: 25px 25px black;
             border-radius: 10px;
         }
+        a{
+            color: white;
+        }
+        .subtitulo{
+            margin-top: 0;
+        }
+        #listagem{
+            max-height: 240px;
+            width: 580px;
+            overflow: auto;
+            box-shadow: 0px 5px 10px -7px black;
+            border-radius: 5px;
+        }
     </style>
 </head>
-<body>
-    <div id="total">
-        <div id="caixa">
-            <div id="conteudo">
-                <h1>
-                    Início da pasta 'LocalHost'
-                </h1>
+    <body>
+        <div id="total">
+            <div id="caixa">
+                <div id="conteudo">
+                    <h1>
+                        Início da pasta 'LocalHost'
+                    </h1>
+                    <h3 class="subtitulo">
+                        Listagem das pastas:
+                    </h3>
+                    <div id="listagem">
+                        <?php
+                            // $path = 'C:\xampp\htdocs';
+                            // $diretorio = dir($path);
+                            // while($arquivo = $diretorio -> read()){
+                            //     echo "<a href='".$path.$arquivo."'>".$arquivo."</a><br />";
+                            // }
+                            // $diretorio -> close();
+                            
+                            $dir = scandir('C:\xampp\htdocs');
+                                foreach ($dir as $d){
+                                echo $d."<br>";
+                            }
+                        ?>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</body>
+    </body>
 </html>
