@@ -21,8 +21,8 @@
                     <div id="listagem">
                         <?php
                             $dir = scandir('C:\xampp\htdocs');
-                                foreach ($dir as $d){
-                                echo '<a href="http://localhost/'.$d.'">'.$d.'<br>'.'</a>';
+                            foreach ($dir as $d){
+                                echo '<ul>'.'<li>'.'<a href="http://localhost/'.$d.'">'.$d.'<br>'.'</a>'.'</li>'.'</ul>';
                             }
                         ?>
                     </div>
