@@ -22,7 +22,7 @@
                         <?php
                             $dir = scandir('C:\xampp\htdocs');
                                 foreach ($dir as $d){
-                                echo $d.'<br>';
+                                echo '<a href="http://localhost/'.$d.'">'.$d.'<br>'.'</a>';
                             }
                         ?>
                     </div>
