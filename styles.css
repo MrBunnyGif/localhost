@@ -22,7 +22,6 @@ body{
 }
 a{
     color: white;
-    text-decoration: none;
 }
 a:hoover{
     color: gray!important;
