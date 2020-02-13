@@ -10,6 +10,7 @@
             height: 900px;
         }
     </style>
+    <script src="jquery-3.4.1.min.js"></script>
 </head>
 <body>
     <article class="teste">
