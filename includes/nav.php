@@ -32,10 +32,30 @@
                     ?>
                     </div>
                 </div>
-                <div class="footer">
-                        <a>
-                            teste
-                        </a>
+                <footer>
+                    <button>
+                        nova pasta
+                    </button>
+                    <button>
+                        novo arquivo
+                    </button>
+                </footer>
+            </div>
+            <div class="criacao">
+                <h2>
+                    Criar arquivo
+                </h2>
+                <div>
+                    <form action="">
+                        <input type="text" placeholder="Nome do arquivo">
+                        <select name="" id="">
+                            <option value=".txt">txt</option>
+                            <option value=".php">php</option>
+                            <option value=".js">javaScript</option>
+                            <option value=".html">html</option>
+                            <option id="form-outro" value="">outro</option>
+                        </select>
+                    </form>
                 </div>
             </div>
         </div>
