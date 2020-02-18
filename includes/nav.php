@@ -10,13 +10,13 @@
         ?>
     </title>
     <link rel="shortcut icon" href="https://i.imgur.com/O7CRS3b.png">
-    <link rel="stylesheet" type="text/css" href="http://localhost/styles.css"/>
+    <link rel="stylesheet" type="text/css" href="../styles.css"/>
+    <link rel="stylesheet" type="text/css" href="../styles.css"/>
 </head>
     <body>
         <div id="total">
             <div id="caixa">
-                <div id="conteudo">
-                
+                <div class="conteudo">
                     <h1>
                         Listagem para pasta '<?php echo $titulo; ?>'
                     </h1>
@@ -33,31 +33,54 @@
                     </div>
                 </div>
                 <footer>
-                    <button>
+                    <button id="newFolder">
                         nova pasta
                     </button>
-                    <button>
+                    <button id="newFile">
                         novo arquivo
                     </button>
                 </footer>
             </div>
-            <div class="criacao">
-                <h2>
-                    Criar arquivo
-                </h2>
-                <div>
-                    <form action="">
-                        <input type="text" placeholder="Nome do arquivo">
-                        <select name="" id="">
-                            <option value=".txt">txt</option>
-                            <option value=".php">php</option>
-                            <option value=".js">javaScript</option>
-                            <option value=".html">html</option>
-                            <option id="form-outro" value="">outro</option>
-                        </select>
-                    </form>
+            <div class="criacao" id="cArquivo">
+                <div class="conteudo">
+                    <h2>
+                        Criar arquivo
+                    </h2>
+                    <div>
+                        <form action="">
+                            <input type="text" placeholder="Nome do arquivo">
+                            <select name="" id="">
+                                <option value=".txt">txt</option>
+                                <option value=".php">php</option>
+                                <option value=".js">javaScript</option>
+                                <option value=".html">html</option>
+                                <option id="form-outro" value="">outro</option>
+                            </select>
+                        </form>
+                    </div>
                 </div>
             </div>
+            <div class="criacao" id="cPasta">
+                <div class="conteudo">
+                    <h2>
+                        Criar pasta
+                    </h2>
+                    <div>
+                        <form action="">
+                            <input type="text" placeholder="Nome do arquivo">
+                            <select name="" id="">
+                                <option value=".txt">txt</option>
+                                <option value=".php">php</option>
+                                <option value=".js">javaScript</option>
+                                <option value=".html">html</option>
+                                <option id="form-outro" value="">outro</option>
+                            </select>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div id='fundo'></div>
         </div>
+        <script src="../scripts.js"></script>
     </body>
 </html>

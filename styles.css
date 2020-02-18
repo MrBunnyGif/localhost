@@ -11,7 +11,7 @@
 	box-shadow: 15px 15px black;
 	transition-duration: .3s;
 }
-#conteudo{
+.conteudo{
 	max-height: 600px;
 	width: 600px;
 	padding: 10px;
@@ -62,10 +62,33 @@ button:hover{
 	border-radius: 4px;
 }
 .criacao {
-    max-height: 50%;
-    width: 600px;
-    margin: auto;
-    transition-duration: .3s;
-	background-color: gray;
+	height: 15%;
+	width: 20%;
+	margin: auto;
+	transition-duration: .3s;
+	background-color:gray;
 	padding-left: 10px;
+	display: flex;
+	align-items: center;
+	padding-bottom: 2%;
+	border-radius: 4px;
+	position: absolute;
+	position: fixed;
+	top: 0;
+	bottom: 50%;
+	left: 0;
+	right: 0;
+	display: none;
+	z-index: 1;
+}
+#fundo{
+	background-color: #0000007d;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: none;
+	position: fixed;
 }
