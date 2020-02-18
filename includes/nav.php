@@ -56,6 +56,8 @@
                                 <option value=".html">html</option>
                                 <option id="form-outro" value="">outro</option>
                             </select>
+                            <br>
+                            <input type="submit" class="submit">
                         </form>
                     </div>
                 </div>
@@ -75,6 +77,8 @@
                                 <option value=".html">html</option>
                                 <option id="form-outro" value="">outro</option>
                             </select>
+                            <br>
+                            <input type="submit" class="submit">
                         </form>
                     </div>
                 </div>

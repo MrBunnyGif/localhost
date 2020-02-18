@@ -3,7 +3,6 @@
 }
 
 #caixa{
-	max-height: 50%;
 	width: 600px;
 	margin: auto;
 	background-color:#4d4d4d;
@@ -62,8 +61,8 @@ button:hover{
 	border-radius: 4px;
 }
 .criacao {
-	height: 15%;
-	width: 20%;
+	height: 160px;
+	width: 300px;
 	margin: auto;
 	transition-duration: .3s;
 	background-color:gray;
@@ -91,4 +90,11 @@ button:hover{
 	right: 0;
 	display: none;
 	position: fixed;
+}
+.submit{
+	border: none;
+	background-color: transparent;
+	border-left: 2px solid white;
+	color: white;
+	cursor: pointer;
 }
