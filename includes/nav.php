@@ -64,7 +64,7 @@
                     </div>
                 </div>
             </div>
-            <div class="criacao" id="cPasta">
+            <div class="criacao " id="cPasta">
                 <div class="conteudo">
                     <h2>
                         Criar pasta

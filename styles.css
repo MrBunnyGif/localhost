@@ -78,6 +78,11 @@ button:hover{
 	display: none;
 	z-index: 1;
 }
+
+.criacao.-active{
+	display: block;
+}
+
 #fundo{
 	background-color: #0000007d;
 	height: 100%;
@@ -89,6 +94,11 @@ button:hover{
 	display: none;
 	position: fixed;
 }
+
+#fundo.-active{
+	display: block;
+}
+
 .submit{
 	border: none;
 	background-color: transparent;
@@ -109,4 +119,14 @@ input[type="text"] {
 }
 input[type="text"]::placeholder {
     color: white;
+}
+option {
+    background-color: #5d5d5d;
+}
+select {
+    border: none;
+    border-left: 2px solid white;
+    color: white;
+	background-color: transparent;
+	cursor: pointer;
 }
