@@ -11,8 +11,6 @@
 	transition-duration: .3s;
 }
 .conteudo{
-	max-height: 600px;
-	width: 600px;
 	padding: 10px;
 }
 body{
@@ -97,4 +95,18 @@ button:hover{
 	border-left: 2px solid white;
 	color: white;
 	cursor: pointer;
+}
+.formHr{
+	float: left;
+    width: 92%;
+}
+input[type="text"] {
+    border: none;
+    padding: 3px;
+    background-color: transparent;
+    color: white;
+    border-left: 2px solid white;
+}
+input[type="text"]::placeholder {
+    color: white;
 }

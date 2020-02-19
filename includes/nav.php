@@ -48,16 +48,18 @@
                     </h2>
                     <div>
                         <form action="">
-                            <input type="text" placeholder="Nome do arquivo">
-                            <select name="" id="">
-                                <option value=".txt">txt</option>
-                                <option value=".php">php</option>
-                                <option value=".js">javaScript</option>
-                                <option value=".html">html</option>
-                                <option id="form-outro" value="">outro</option>
-                            </select>
-                            <br>
-                            <input type="submit" class="submit">
+                            <div>
+                                <input type="text" placeholder="Nome do arquivo">
+                                <select name="" id="">
+                                    <option value=".txt">txt</option>
+                                    <option value=".php">php</option>
+                                    <option value=".js">javaScript</option>
+                                    <option value=".html">html</option>
+                                    <option id="form-outro" value="">outro</option>
+                                </select>
+                            </div>
+                            <hr class="formHr">
+                            <input value="Criar" type="submit" class="submit">
                         </form>
                     </div>
                 </div>
@@ -69,16 +71,11 @@
                     </h2>
                     <div>
                         <form action="">
-                            <input type="text" placeholder="Nome do arquivo">
-                            <select name="" id="">
-                                <option value=".txt">txt</option>
-                                <option value=".php">php</option>
-                                <option value=".js">javaScript</option>
-                                <option value=".html">html</option>
-                                <option id="form-outro" value="">outro</option>
-                            </select>
-                            <br>
-                            <input type="submit" class="submit">
+                            <div>
+                                <input type="text" placeholder="Nome do arquivo">
+                            </div>
+                            <hr class="formHr">
+                            <input value="Criar" type="submit" class="submit">
                         </form>
                     </div>
                 </div>

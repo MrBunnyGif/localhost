@@ -1,3 +1,4 @@
+// popup aparecendo
 var btnFolder = document.getElementById('newFolder');
 var btnFile = document.getElementById('newFile');
 var divFile = document.getElementById('cArquivo');
@@ -16,4 +17,12 @@ fundo.addEventListener("click", function(){
 	divFile.style.display = "none";
 	divFolder.style.display = "none";
 	fundo.style.display = "none";
+});
+
+// Pressionada tecla esc
+document.addEventListener('keydown', function(event) {
+    const key = event.key; // Or const {key} = event; in ES6+
+    if (key === "Escape") {
+        alert("Está funcionando");
+    }
 });
