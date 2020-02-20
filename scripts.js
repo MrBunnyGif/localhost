@@ -1,9 +1,9 @@
 // popup aparecendo
-var btnFolder = document.getElementById('newFolder');
-var btnFile = document.getElementById('newFile');
-var divFile = document.getElementById('cArquivo');
-var divFolder = document.getElementById('cPasta');
-var fundo = document.getElementById('fundo');
+let btnFolder = document.getElementById('newFolder');
+let btnFile = document.getElementById('newFile');
+let divFile = document.getElementById('cArquivo');
+let divFolder = document.getElementById('cPasta');
+let fundo = document.getElementById('fundo');
 
 btnFile.addEventListener("click", function(){
 	divFile.classList.toggle('-active');
@@ -11,7 +11,7 @@ btnFile.addEventListener("click", function(){
 	fundo.style.display = "block";
 	if ((divFile.classList.contains('-active'))){
 		document.addEventListener('keydown', function() {
-			var key = event.key;
+			let key = event.key;
 			if (key === "Escape") {
 				divFile.classList.toggle('-active');
 				divFile.style.display = "none";
@@ -26,7 +26,7 @@ btnFolder.addEventListener("click", function(){
 	fundo.style.display = "block";
 	if ((divFolder.classList.contains('-active'))){
 		document.addEventListener('keydown', function() {
-			var key = event.key;
+			let key = event.key;
 			if (key === "Escape") {
 				divFolder.classList.toggle('-active');
 				divFolder.style.display = "none";
@@ -34,7 +34,6 @@ btnFolder.addEventListener("click", function(){
 			}
 		});
 	}
-	
 });
 fundo.addEventListener("click", function(){
 	if (divFile.classList.contains('-active')){
