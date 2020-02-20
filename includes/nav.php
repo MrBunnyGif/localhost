@@ -47,10 +47,10 @@
                         Criar arquivo
                     </h2>
                     <div>
-                        <form action="">
+                        <form method="post" action="includes/new-file.php">
                             <div>
-                                <input type="text" placeholder="Nome do arquivo">
-                                <select name="" id="">
+                                <input type="text" name="file-name" placeholder="Nome do arquivo">
+                                <select name="tipo" id="">
                                     <option value=".txt">txt</option>
                                     <option value=".php">php</option>
                                     <option value=".js">javaScript</option>
@@ -70,9 +70,9 @@
                         Criar pasta
                     </h2>
                     <div>
-                        <form action="">
+                        <form method="get" action="includes/new-folder.php">
                             <div>
-                                <input type="text" placeholder="Nome do arquivo">
+                                <input type="text" name="folder-name" placeholder="Nome do arquivo">
                             </div>
                             <hr class="formHr">
                             <input value="Criar" type="submit" class="submit">
