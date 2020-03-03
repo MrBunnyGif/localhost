@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+header{
+    width: 100%;
+    background-color: #2574a9;
+}
+.container{
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0 60px;
+}
+.logo img{
+    width: 320px;
+}
+section{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+section:nth-child(odd){
+    height: 100vh;
+    background-color: #cae1f1;
+}
+section:nth-child(even){
+    height: 100vh;
+    background-color: #b7d5eb;
+}
