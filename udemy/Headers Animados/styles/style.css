@@ -22,15 +22,45 @@ header{
     max-width: 1220px;
     margin: 0 auto;
     padding: 0 60px;
+    display: grid;
+    grid-template-areas: "lgo ... nav";
+    grid-template-columns: auto 1fr auto;
+    height: 100px;
+    align-items: center;
+}
+.logo{
+    grid-area: lgo;
 }
 .logo img{
     width: 320px;
+}
+.nav-bar{
+    font-size: 18px;
+    display: grid;
+    grid-area: nav;
+}
+.nav-bar ul{
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 10px;
+
+}
+.nav-bar a{
+    font-family: "Taxi Driver";
+    font-size: 1em;
+    color: #c5eff7;
+    text-transform: uppercase;
+}
+main{
+    font-size: 20px;
 }
 section{
     display: grid;
     justify-content: center;
     align-content: center;
     font-family: "Taxi Driver";
+    font-size: 2em;
+    color: #2574a9;
 }
 section:nth-child(odd){
     height: 100vh;
