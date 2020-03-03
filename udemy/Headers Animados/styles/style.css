@@ -1,3 +1,8 @@
+@font-face{
+    src: url("../fonts/TaxiDriver.ttf");
+    font-family: "Taxi Driver";
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -25,6 +30,7 @@ section{
     display: grid;
     justify-content: center;
     align-content: center;
+    font-family: "Taxi Driver";
 }
 section:nth-child(odd){
     height: 100vh;
