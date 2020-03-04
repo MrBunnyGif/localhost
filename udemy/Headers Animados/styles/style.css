@@ -16,7 +16,15 @@ a{
 }
 header{
     width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+
+.max-header{
     background-color: #2574a9;
+}
+.min-header{
+    background-color: #c5eff7;
 }
 .container{
     max-width: 1220px;
@@ -51,10 +59,15 @@ header{
     color: #c5eff7;
     text-transform: uppercase;
 }
+.ghost{
+    width: 100%;
+    background-color: red;
+    height: 100px;
+}
 main{
     font-size: 20px;
 }
-section{
+main section{
     display: grid;
     justify-content: center;
     align-content: center;
@@ -62,11 +75,11 @@ section{
     font-size: 2em;
     color: #2574a9;
 }
-section:nth-child(odd){
+main section:nth-child(odd){
     height: 100vh;
     background-color: #cae1f1;
 }
-section:nth-child(even){
+main section:nth-child(even){
     height: 100vh;
     background-color: #b7d5eb;
 }
