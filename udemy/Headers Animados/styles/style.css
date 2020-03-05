@@ -18,13 +18,18 @@ header{
     width: 100%;
     position: fixed;
     z-index: 1;
+    height: 100px;
+    font-size: 16px;
 }
-
 .max-header{
     background-color: #2574a9;
+    height: 100px;
+    transition-duration: 0.3s;
 }
 .min-header{
     background-color: #c5eff7;
+    height: 80px;
+    transition-duration: 0.3s;
 }
 .container{
     max-width: 1220px;
@@ -33,17 +38,19 @@ header{
     display: grid;
     grid-template-areas: "lgo ... nav";
     grid-template-columns: auto 1fr auto;
-    height: 100px;
     align-items: center;
+    height: 100%;
 }
 .logo{
     grid-area: lgo;
 }
-.logo img{
+.max-logo img{
     width: 320px;
 }
+.min-logo img{
+    width: 280px;
+}
 .nav-bar{
-    font-size: 18px;
     display: grid;
     grid-area: nav;
 }
@@ -55,13 +62,19 @@ header{
 }
 .nav-bar a{
     font-family: "Taxi Driver";
+    text-transform: uppercase;
+}
+.max-nav a{
     font-size: 1em;
     color: #c5eff7;
-    text-transform: uppercase;
+}
+.min-nav a{
+    font-size: 0.875em;
+    color: #2574a9;
 }
 .ghost{
     width: 100%;
-    background-color: red;
+    background-color: #2574a9;
     height: 100px;
 }
 main{
