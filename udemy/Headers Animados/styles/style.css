@@ -20,16 +20,15 @@ header{
     z-index: 1;
     height: 100px;
     font-size: 16px;
+    transition-duration: 0.3s;
 }
 .max-header{
     background-color: #2574a9;
     height: 100px;
-    transition-duration: 0.3s;
 }
 .min-header{
     background-color: #c5eff7;
     height: 80px;
-    transition-duration: 0.3s;
 }
 .container{
     max-width: 1220px;
@@ -43,6 +42,9 @@ header{
 }
 .logo{
     grid-area: lgo;
+}
+.logo img{
+    transition-duration: 0.3s;
 }
 .max-logo img{
     width: 320px;
@@ -63,6 +65,7 @@ header{
 .nav-bar a{
     font-family: "Taxi Driver";
     text-transform: uppercase;
+    transition-duration: 0.3s;
 }
 .max-nav a{
     font-size: 1em;
@@ -74,7 +77,7 @@ header{
 }
 .ghost{
     width: 100%;
-    background-color: #2574a9;
+    background-color: #cae1f1;
     height: 100px;
 }
 main{

@@ -10,11 +10,15 @@ function toggleHeader(){
 		$logo.firstElementChild.setAttribute('src', 'imgs/omnitech-logo-2.png');
 		$logo.classList.remove('max-logo');
 		$logo.classList.add('min-logo');
+		$navBar.classList.remove('max-nav');
+		$navBar.classList.add('min-nav');
 	} else if (window.pageYOffset <= 60 && $header.classList.contains('min-header')){
 		$header.classList.remove('min-header');
 		$header.classList.add('max-header');
 		$logo.firstElementChild.setAttribute('src', 'imgs/omnitech-logo-1.png');
 		$logo.classList.add('max-logo');
 		$logo.classList.remove('min-logo');
+		$navBar.classList.add('max-nav');
+		$navBar.classList.remove('min-nav');
 	}
 }
