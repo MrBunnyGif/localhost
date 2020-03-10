@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JsonPlaceholder</title>
+	<style>
+		table *{
+			border: black solid 1px;
+		}
+		table{
+			border-spacing: 0;
+			margin-top: 20px;
+		}
+		th {
+			min-width: 100px;
+		}
+	</style>
+</head>
+<body>
+	<input placeholder="escreva aqui" type="text" name="input" id="campo" onkeydown="pressionado()" />
+	<table>
+		<tr>
+			<th>
+				userId
+			</th>
+			<th>
+				id
+			</th>
+			<th>
+				title
+			</th>
+			<th>
+				completed
+			</th>
+		</tr>
+	</table>
+
+	<script>
+		// let texto = document.getElementById('campo');
+		let campo = document.getElementById("campo");
+		let valor = campo.value;
+		function pressionado(){
+			console.log(campo.value);
+		}
+		// campo.addEventListener('keydown', function(){
+		// 	console.log(campo.value);
+		// });
+	</script>
+</body>
+</html>
