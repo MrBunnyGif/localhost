@@ -12,14 +12,14 @@
 	$numero = $_POST["input"];
 	$numero_tam = strlen($numero);
 	if($numero_tam == 3){
-		if($numero[2] == 0){
+		if($numero == 100){
+			echo 'cem';
+		}else if($numero[2] == 0){
 			echo $centesimos[$numero[0]-1];
 		}else if($numero[1] == 0){
 			echo $centesimos[$numero[0]-1]." e ".$algarismo[$numero[2]];
 		}else if($numero[1] == 1){
 			echo $centesimos[$numero[0]-1]." e ".$d10[$numero[2]];
-		}else if($numero ==100){
-			echo 'cem';
 		}else{
 			echo $centesimos[$numero[0]-1]." e ".$decimais[$numero[1]-1]." e ".$algarismo[$numero[2]];
 		}
