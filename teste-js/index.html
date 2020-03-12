@@ -1,51 +1,75 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>JsonPlaceholder</title>
 	<style>
-		table *{
+		table * {
 			border: black solid 1px;
 		}
-		table{
-			border-spacing: 0;
+
+		table {
+			border-collapse: collapse;
 			margin-top: 20px;
 		}
-		th {
+
+		table th {
 			min-width: 100px;
 		}
 	</style>
 </head>
-<body>
-	<input placeholder="escreva aqui" type="text" name="input" id="campo" onkeydown="pressionado()" />
-	<table>
-		<tr>
-			<th>
-				userId
-			</th>
-			<th>
-				id
-			</th>
-			<th>
-				title
-			</th>
-			<th>
-				completed
-			</th>
-		</tr>
-	</table>
 
-	<script>
-		// let texto = document.getElementById('campo');
+<body>
+	<input placeholder="escreva aqui" type="text" id="campo" />
+	<div id="tabelas">
+		<table id="tabela">
+			<tr>
+				<th>
+					user
+				</th>
+				<th>
+					id
+				</th>
+				<th>
+					title
+				</th>
+				<th>
+					completed
+				</th>
+			</tr>
+		</table>
+	</div>
+	<script type="text/javascript">
 		let campo = document.getElementById("campo");
-		let valor = campo.value;
-		function pressionado(){
-			console.log(campo.value);
+
+		// criação da tabela
+		function linhasTabela(){
+			for (let j = 0; j < 1; j++) {
+				let linha = document.createElement('tr');
+				for (let i = 0; i < 4; i++) {
+					let text = document.getElementById('txt');
+					let celula = document.createElement('td');
+					let celCont = document.createTextNode('foi');
+					celula.appendChild(celCont);
+					linha.appendChild(celula);
+				}
+				tabela.appendChild(linha);
+			}
 		}
-		// campo.addEventListener('keydown', function(){
-		// 	console.log(campo.value);
-		// });
+		
+		campo.addEventListener('keyup', function () {
+			let valor = campo.value;
+			if (valor.length > 1) {
+				let tabela = document.getElementsByTagName('table')[0];
+				linhasTabela();
+			}
+		})
+		// fetch('https://jsonplaceholder.typicode.com/todos/1')
+  		// 	.then(response => response.json())
+  		// 	.then(json => console.log(json))
 	</script>
 </body>
+
 </html>

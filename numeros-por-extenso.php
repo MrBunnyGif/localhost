@@ -4,10 +4,20 @@
 	$decimais = ['', 'vinte', 'trinta', 'quarenta', 'cinquenta', 'sessenta', 'setenta', 'oitenta', 'noventa',];
 	$centesimos = ['cento', 'duzentos', 'trezentos', 'quatrocentos', 'quinhentos', 'seiscentos', 'setecenstos', 'oitocentos', 'novescentos'];
 ?>
-<form method="post" action="#">
-	<input type="number" name="input">
-	<input type="submit">
-</form>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<form method="post" action="#">
+		<input type="number" name="input">
+		<input type="submit">
+	</form>
+</body>
+</html>
 <?php
 	$numero = $_POST["input"];
 	$numero_tam = strlen($numero);
