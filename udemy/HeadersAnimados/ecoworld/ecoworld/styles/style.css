@@ -42,11 +42,10 @@ header{
     height: 40px;
     justify-content: center;
     align-items: center;
-}
-.nav-bar a{
     font-family: 'Rancho', cursive;
     font-size: 1em;
     color: #f8efba;
+    cursor: pointer;
 }
 .abs-pos{
     position: absolute;
