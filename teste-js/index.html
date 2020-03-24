@@ -42,34 +42,37 @@
 		</table>
 	</div>
 	<script type="text/javascript">
-		let campo = document.getElementById("campo");
-
 		// criação da tabela
-		function linhasTabela(){
+		function linhasTabela() {
+			let campo = document.getElementById("campo");
+			let numTr = ('tr - ', document.getElementsByTagName('tr').length);
+			let valor = campo.value;
 			for (let j = 0; j < 1; j++) {
 				let linha = document.createElement('tr');
 				for (let i = 0; i < 4; i++) {
 					let text = document.getElementById('txt');
 					let celula = document.createElement('td');
-					let celCont = document.createTextNode('foi');
+					let celCont = document.createTextNode(campo.value);
 					celula.appendChild(celCont);
 					linha.appendChild(celula);
 				}
 				tabela.appendChild(linha);
 			}
+			if (numTr > valor.length && numTr > 1)
+				deleteRow(0)
 		}
-		
+
 		campo.addEventListener('keyup', function () {
 			let valor = campo.value;
+			let tam1 = valor.length;
+			let linhTr = document.getElementsByTagName('tr')[0];
 			if (valor.length > 1) {
 				let tabela = document.getElementsByTagName('table')[0];
 				linhasTabela();
 			}
+			// remoção de tr's
+		
 		})
-		// fetch('https://jsonplaceholder.typicode.com/todos/1')
-  		// 	.then(response => response.json())
-  		// 	.then(json => console.log(json))
 	</script>
 </body>
-
 </html>

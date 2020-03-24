@@ -36,14 +36,12 @@ header{
     display: grid;
     grid-auto-flow: column;
 }
-.nav-bar li{
+.nav-bar a{
     display: flex;
     width: 160px;
     height: 40px;
     justify-content: center;
     align-items: center;
-}
-.nav-bar a{
     font-family: 'Rancho', cursive;
     font-size: 1em;
     color: #f8efba;
